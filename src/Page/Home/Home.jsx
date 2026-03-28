@@ -1,8 +1,21 @@
 import React from "react";
+import Hero from "./HomeComponents/Hero";
+import HomeCategory from "./HomeComponents/HomeCategory";
+import PopularProducts from "./HomeComponents/PopularProducts/PopularProducts";
+import LatestExclusive from "./HomeComponents/LatestExclusive";
+import Collection from "./HomeComponents/Collection";
+import NewProducts from "./HomeComponents/NewProducts";
+import Support from "./HomeComponents/Support";
 const Home = () => {
     return(
         <div>
-            <h1>Home page</h1>
+            <Hero></Hero>
+            <HomeCategory></HomeCategory>
+            <PopularProducts></PopularProducts>
+            <LatestExclusive></LatestExclusive>
+            <NewProducts></NewProducts>
+            <Collection></Collection>
+            <Support></Support>
         </div>
     );
 }

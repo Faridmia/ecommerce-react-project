@@ -10,6 +10,9 @@ import ShopNow from './Page/ShopNow/ShopNow';
 import About from './Page/About/About';
 import Blog from './Page/Blog/Blog';
 import Contact from './Page/Contact/Contact';
+import { FilterProvider } from './Context/FilterContext';
+import { Provider } from 'react-redux';
+import store from './redux/store/store';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +26,13 @@ const router = createBrowserRouter([
     ],
   }
 ]);
+
 const root = document.getElementById("root");
+
 ReactDOM.createRoot(root).render(
-  <RouterProvider router={router} />,
+  <Provider store={store}>
+    <FilterProvider>
+      <RouterProvider router={router} />
+    </FilterProvider>
+  </Provider>
 );
