@@ -10,7 +10,7 @@ const MidHeader = () => {
     return (
         <div >
             <div className='flex flex-wrap items-center py-2 justify-between container  mx-auto px-4 sm:px-8 md:px-12 lg:px-24'>
-                <img className='w-16 md:w-22' src={logo} alt="" />
+                Logo
                 <div className='w-full md:w-auto order-3 md:order-2 mt-4 md:mt-0'>
                     <label className="input w-full">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
