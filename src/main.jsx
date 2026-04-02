@@ -11,6 +11,9 @@ import About from './Page/About/About';
 import Blog from './Page/Blog/Blog';
 import Contact from './Page/Contact/Contact';
 import { FilterProvider } from './Context/FilterContext';
+import Cart from './Page/Cart/Cart';
+import Login from './Page/Auth/Login';
+import Registration from './Page/Auth/Registration';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
 const router = createBrowserRouter([
@@ -23,6 +26,9 @@ const router = createBrowserRouter([
       { path: "/about", element: <About></About> },
       { path: "/blog", element: <Blog></Blog> },
       { path: "/contact", element: <Contact></Contact> },
+      { path: "/cart", element: <Cart></Cart>},
+      { path: "/login", element: <Login></Login>},
+      { path: "/register", element: <Registration></Registration>},
     ],
   }
 ]);
