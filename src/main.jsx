@@ -16,6 +16,7 @@ import Login from './Page/Auth/Login';
 import Registration from './Page/Auth/Registration';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
+import SingleProductPage from './Components/SharedComponents/SingleProductPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <About></About> },
       { path: "/blog", element: <Blog></Blog> },
       { path: "/contact", element: <Contact></Contact> },
+      { path: "/shop/:id", element:<SingleProductPage></SingleProductPage>},
       { path: "/cart", element: <Cart></Cart>},
       { path: "/login", element: <Login></Login>},
       { path: "/register", element: <Registration></Registration>},
